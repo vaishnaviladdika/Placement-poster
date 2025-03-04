@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Poster - Square Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="poster">
+        <div class="header">MANI VAISHNAVI LADDIKA</div>
+        <div class="subheader">BTech CSE (AIML), but Still No Job 😭 Relatable?</div>
+
+        <div class="main-content">
+            <div class="left-section">
+                <div class="image-container">
+                    <img src="girl-working.png" alt="CSE Girl Working">
+                    <img src="coffee-mug.png" alt="Coffee Mug">
+                </div>
+                <div class="speech-bubble">Placements are tough, but so am I!</div>
+            </div>
+
+            <div class="right-section">
+                <div class="chart-container">
+                    <canvas id="jobHuntChart"></canvas>
+                </div>
+                <div class="checklist-legend">
+                    <span class="green">✅ Completed: DSA Practice, Resume Building, Networking</span>
+                    <span class="red">❌ Pending: Interviews</span>
+                </div>
+
+                <div class="sticky-note">
+                    Keep grinding. Your dream job is closer than you think!
+                </div>
+
+                <!-- Mini To-Do List -->
+                <div class="todo-list">
+                    <h4>⚡ Mini To-Do List:</h4>
+                    <ul>
+                        <li>Update LinkedIn profile</li>
+                        <li>Mock interview with a friend</li>
+                        <li>Apply to 5 new jobs today</li>
+                    </ul>
+                </div>
+
+                <!-- Fun Fact or Meme -->
+                <div class="fun-fact">
+                    <h4>😅 Fun Fact:</h4>
+                    Debugging my career like it's a missing semicolon.
+                </div>
+
+                <!-- Extra Motivation -->
+                <div class="extra-motivation">
+                    🌟 Remember: Every rejection is just redirection to something better!
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">Loves Arrays, Hates Life.</div>
+        <div class="side-text">Started 100 Projects, Finished Like 3.5</div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('jobHuntChart').getContext('2d');
+        const data = {
+            labels: ['Completed', 'Pending'],
+            datasets: [{
+                data: [3, 1], 
+                backgroundColor: ['#4caf50', '#f44336']
+            }]
+        };
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: data,
+            options: {
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

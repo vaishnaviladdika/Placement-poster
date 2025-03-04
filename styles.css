@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.poster {
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subheader {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.left-section, .right-section {
+    flex: 1;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.speech-bubble {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 12px;
+    text-align: center;
+    font-style: italic;
+}
+
+.checklist {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+}
+
+.sticky-note {
+    background-color: yellow;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #666;
+}
+
+.side-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    font-size: 14px;
+    color: #777;
+}
+
+/* New additions */
+.chart-container {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+.checklist-legend {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.checklist-legend span {
+    display: block;
+    margin: 3px 0;
+}
+
+.green { color: #4caf50; }
+.red { color: #f44336; }
+
+.todo-list, .fun-fact {
+    background-color: #f0f0f0;
+    padding: 8px;
+    margin-top: 10px;
+    border-left: 5px solid #007bff;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.fun-fact {
+    background-color: #fff5e1;
+    border-left-color: #ff9800;
+}
+
+.todo-list h4, .fun-fact h4 {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+.todo-list ul {
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+.extra-motivation {
+    text-align: center;
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+    font-size: 13px;
+}
